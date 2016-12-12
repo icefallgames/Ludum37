@@ -23,9 +23,9 @@ public class WallScript : MonoBehaviour {
    // [HideInInspector]
    // public Vector3 OriginalPosition;
 
-    public void OnStartPushWall()
+    public void OnStartPushWall(Vector2 normal)
     {
-        level.OnStartPushWall(this);
+        level.OnStartPushWall(this, normal);
     }
 
     public void OnStopPushWall()
